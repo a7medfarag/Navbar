@@ -80,7 +80,7 @@ font-weight: bold;
         margin: auto;
     }
       .ul_container{
-        animation: fadeIn 1.5s ease;
+        animation: fadeIn 2.5s ease;
       }  
     .collapse ul{
         background-color: #fff;
