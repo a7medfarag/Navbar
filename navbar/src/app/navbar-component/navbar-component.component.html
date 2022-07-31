@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="cust_container flex-row" >
+        <div class="logo">
+            <img src="../../assets/shared/images/logo.jpg" alt="" class="img-fluid">
+        </div>
+      
+        <button class="navbar-toggler" (click)="toggleCollapsed()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div [ngClass]="{'collapse': collapsed, 'navbar-collapse': true , 'show': showed}" id="navbarSupportedContent" (click)="toggleCollapsed()">
+       <div class="ul_container">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="logo port_display">
+            <img src="../../assets/shared/images/logo.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="profile_info port_display">
+            <a class="nav-link sign_in" aria-current="page">Sign In</a>
+            <a class="nav-link sign_up" aria-current="page">Sign up</a>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link hotels" aria-current="page">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page">Flights</a>
+          </li> 
+          <li class="nav-item port_display">
+            <a class="nav-link " aria-current="page">Contact Us</a>
+          </li>
+          <li class="nav-item port_display">
+            <a class="nav-link " aria-current="page">Change Language</a>
+          </li>
+          <li class="nav-item port_display">
+            <a class="nav-link " aria-current="page">Change Currency</a>
+          </li>
+          <li class="nav-item port_display">
+            <a class="nav-link " aria-current="page">About Us</a>
+          </li>
+          <li class="nav-item port_display">
+            <a class="nav-link " aria-current="page">Privacy Policy</a>
+          </li>
+          <li class="nav-item port_display">
+            <a class="nav-link " aria-current="page">FAQs</a>
+          </li>
+          <li class="nav-item port_display">
+            <a class="nav-link" aria-current="page">Settings</a>
+          </li>
+          <div class="profile_info land_display">
+            <p>
+              Language
+            </p>
+            <a class="nav-link sign_in" aria-current="page">Sign In</a>
+            <a class="nav-link sign_up" aria-current="page">Sign up</a>
+          </div>
+        </ul>
+        
+       </div>
+        
+      </div>
+     
+    </div>
+   
+    </nav>

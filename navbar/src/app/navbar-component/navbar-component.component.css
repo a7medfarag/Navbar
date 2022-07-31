@@ -1,0 +1,161 @@
+
+.cust_container{
+    padding: 0 1rem;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:  space-between;
+}
+
+.logo{
+    max-width: 100%;
+    width: 10%;
+}
+.collapse .ul_container{
+    width: 100%;
+}
+.collapse ul{
+    margin: 0 auto; 
+    font-weight: bold;
+}
+.collapse ul .profile_info{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    
+}
+.collapse ul .profile_info .sign_in{
+    font-size: 1rem;
+}
+.collapse ul .profile_info .sign_up{
+    font-size: 1rem;
+    border: 1px solid #ae449c;
+    background-color: transparent;
+    color: #ae449c;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.collapse ul .profile_info .sign_up:hover{
+    background-color: #ae449c;
+    color: #fff;
+}
+.hotels{
+    color: #ae449c;
+}
+.collapse ul .profile_info p{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.1;
+    padding-right: 0.2rem;
+    border-right: 1px solid #00000045;
+    color: #00000085;
+}
+.collapse .navbar-nav .nav-item .nav-link{
+    font-size: 1rem;
+}
+.collapse .navbar-nav .nav-item .nav-link.active{
+font-weight: bold;
+}
+
+.port_display{
+    display: none !important;
+}
+
+
+@media screen and (max-width: 992px)   {
+    .navbar-toggler{
+        order: 1;
+    }
+    .logo{
+        order: 2;
+        width: 12%;
+        font-size: 1rem;
+        margin: auto;
+    }
+    .collapse ul{
+        background-color: #fff;
+        width: 43%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .ul_container{
+        width: 100%;
+        background-color: #00000087;
+    }
+    .profile_info{
+        background-color: #fff;
+        width: 80% !important;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .port_display{
+        display: flex !important;
+        order: 0;
+    }
+    ul .logo{
+        width: 30%;
+    }
+    ul li{
+        border-bottom: 1px solid #00000045;
+    }
+.land_display{
+    display: none !important;
+}
+}
+@media screen and (max-width: 768px) {
+    .collapse ul{
+        width: 34%;
+        padding: 1rem;
+    }
+    .collapse ul li a{
+        font-size: .8rem !important;
+    }
+    .collapse ul .profile_info .sign_in,
+    .collapse ul .profile_info .sign_up{
+        font-size: .8rem;
+    }
+    .profile_info{
+        width: 90% !important;
+    }
+} 
+@media screen and (max-width: 768px)  and (orientation: portrait){
+    .collapse ul{
+        width: 34%;
+        padding: 1rem;
+    }
+    .collapse ul li a{
+        font-size: .8rem !important;
+    }
+    .collapse ul .profile_info .sign_in,
+    .collapse ul .profile_info .sign_up{
+        font-size: .8rem;
+    }
+    .profile_info{
+        width: 90% !important;
+    }
+} 
+@media screen and (max-width: 550px){
+    .collapse ul{
+        width: 50%;
+        padding: 1rem;
+    }
+    .collapse ul li a{
+        font-size: .6rem !important;
+    }
+    .collapse ul .profile_info .sign_in,
+    .collapse ul .profile_info .sign_up{
+       font-size: .6rem;
+    }
+    .profile_info{
+        width: 90% !important;
+    }
+} 
