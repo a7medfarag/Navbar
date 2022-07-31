@@ -63,6 +63,10 @@ font-weight: bold;
 .port_display{
     display: none !important;
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 
 @media screen and (max-width: 992px)   {
@@ -75,6 +79,9 @@ font-weight: bold;
         font-size: 1rem;
         margin: auto;
     }
+      .ul_container{
+        animation: fadeIn 1.5s ease;
+      }  
     .collapse ul{
         background-color: #fff;
         width: 43%;
@@ -86,6 +93,7 @@ font-weight: bold;
         top: 0;
         left: 0;
         width: 100%;
+        transition: box-shadow .15s ease-in-out;
     }
     .ul_container{
         width: 100%;
